@@ -1,0 +1,42 @@
+.header {
+  background-color: #ddd;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 12px 0;
+
+    &_icon {
+      font-size: 18px;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+
+    &_links {
+      display: flex;
+    }
+
+    &_item {
+      list-style-type: none;
+    }
+  }
+
+  &__signin {
+    padding: 0 20px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+}
