@@ -1,0 +1,10 @@
+.navMenuItem {
+  cursor: pointer;
+  padding: 0 20px;
+  transition: color 0.2s ease;
+  text-decoration: none;
+
+  &:hover {
+    color: red;
+  }
+}
