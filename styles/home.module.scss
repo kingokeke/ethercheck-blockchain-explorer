@@ -1,5 +1,5 @@
 .home {
-  &__top_section {
+  &__search_section {
     background-color: #303030;
     color: #fff;
   }
@@ -9,10 +9,80 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 0 70px;
+    padding: 50px 0 100px;
   }
 
-  &__bottom_section {
-    background-color: #f5f5f5;
+  &__stats_summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    padding: 20px;
+
+    &_section_one,
+    &_section_two,
+    &_section_three{
+      flex: 1;
+    }
+
+    &_price,
+    &_marketcap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 0;
+
+      &_icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+
+      &_content {
+        display: flex;
+        flex-direction: column;
+
+        &_title,
+        &_value {
+          margin: 0;
+        }
+
+        &_title {
+          font-size: 0.8em;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    &_section_two {
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+  }
+
+  &__stats_latest {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+    &_transactions,
+    &_blocks {
+      flex: 1;
+    }
+
+    &_blocks {
+      margin-right: 5px;
+    }
+
+    &_transactions {
+      margin-left: 5px;
+    }
   }
 }
