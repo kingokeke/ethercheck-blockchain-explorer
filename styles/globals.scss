@@ -14,3 +14,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.card {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.horizontal-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
