@@ -1,0 +1,90 @@
+.transactionSummary {
+  &_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &_number {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 150px;
+    flex: 2;
+
+    &_icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      background-color: #ddd;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    &_details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &_hash,
+    &_time {
+      margin: 0;
+    }
+
+    &_hash {
+      max-width: 90px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &_time {
+      font-size: 12px;
+      color: #777;
+    }
+  }
+
+  &_addresses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 250px;
+    flex: 3;
+
+    &_from,
+    &_to {
+      margin: 0;
+      max-width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis
+    }
+  }
+
+  &_reward {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
+    flex: 1;
+
+    &_badge {
+      background-color: #eee;
+      padding: 5px 10px;
+      min-width: 80px;
+    }
+
+    &_value {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+}
