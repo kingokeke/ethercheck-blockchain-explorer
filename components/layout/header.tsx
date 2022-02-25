@@ -1,3 +1,4 @@
+import Link from "next/link";
 import NavLinkProps from "../../models/navLink.model";
 import styles from "../../styles/header.module.scss";
 import NavLink from "../navLink";
@@ -17,7 +18,9 @@ const Header = () => {
       <SiteContainer>
         <div className={styles.header__content}>
           <h1 className={styles.header__logo}>
-            EtherCheck<span className={styles.header__logo_icon}>🔎</span>
+            <Link href="/">
+              <a>EtherCheck</a>
+            </Link>
           </h1>
           <nav className={styles.header__navigation}>
             <ul className={styles.header__navigation_links}>
