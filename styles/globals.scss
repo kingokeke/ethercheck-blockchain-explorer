@@ -27,3 +27,11 @@ a {
   border-top: 1px solid #ddd;
   margin: 20px 0;
 }
+
+.vertical-divider {
+  transform: rotateX(90deg);
+}
+
+.text-right {
+  text-align: right;
+}
