@@ -54,10 +54,6 @@
     }
   }
 
-  &__stats_section {
-    padding: 0 50px;
-  }
-
   &__stats_summary {
     display: flex;
     flex-direction: row;
@@ -154,7 +150,7 @@
     }
 
     &_section_three {
-      padding: 0;
+      padding-left: 25px;
     }
 
     &_transaction_history_chart {
